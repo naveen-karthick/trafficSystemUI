@@ -1,0 +1,362 @@
+@font-face{
+    font-family:'digital-7';
+    src: url('digital-7.ttf');
+   }
+
+.lane1-content {
+    font-family: 'digital-7';
+    font-size: 30px;
+    position: absolute;
+    left: 20%; 
+    top: 5%;
+}
+.lane2-content {
+    font-family: 'digital-7';
+    font-size: 30px;
+    position: absolute;
+    left: 20%; 
+    top: 94%;
+}
+.lane3-content {
+    font-family: 'digital-7';
+    font-size: 30px;
+    position: absolute;
+    left: 83%; 
+    top: 92%;
+}
+.lane4-content {
+    font-family: 'digital-7';
+    font-size: 30px;
+    position: absolute;
+    left: 83%; 
+    top: 5%;
+}
+.lamp {
+    height: 35px;
+    width: 35px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    position: relative;
+}
+h1 {
+    font-family: 'digital-7';
+    background-color: black;
+    width: 46px;
+    color: red;
+    padding: 10px 10px;
+    text-align: center;
+   }
+.red-button {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background-color: red;
+    color: black;
+    border-radius: 50%;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-right {
+display: inline;
+}
+.lampRed {
+    background-color: red;
+}
+
+.lampYellow {
+    background-color: yellow;
+}
+
+.lampGreen {
+    background-color: green;
+}
+
+.signal {
+    padding: 20px;
+}
+
+#lane-1{
+    position: absolute;
+    left: 32%;
+}
+#lane-2{
+    position: absolute;
+    left: 27%;
+    top: 57%;
+    transform: rotate(-90deg);
+}
+#lane-3{
+    position: absolute;
+    left: 63%;
+    top: 69%;
+}
+#lane-4{
+    position: absolute;
+    left: 64%;
+    transform: rotate(-90deg); 
+}
+
+#traffic-signals {
+    background: url('./background-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.image {
+    width: 175px;
+    height: 125px;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+}
+
+#lane-1-image {
+    left:15%;
+    top: 10%;
+}
+#lane-2-image {
+    left:15%;
+    top: 70%;
+}
+#lane-3-image {
+    left:78%;
+    top: 68%;
+}
+#lane-4-image {
+    left:78%;
+    top: 10%;
+}
+.lamp-left {
+    float: left;
+    left: -40px;
+}
+.lamp-straight {
+    float: left;
+    left: -40px;
+}
+.lamp-right {
+    float: left;
+    left: -40px;
+}
+.clear {
+    clear: both;
+}
+
+.ped-image {
+    width: 101px;
+    height: 233px;
+    position: absolute;
+    z-index: 5;
+    background: black;
+}
+#lane-1-ped {
+    top: 61%;
+    transform: rotate(90deg);
+    right: 46.24%;
+}
+#lane-2-ped {
+    top: 33.76%;
+    right: 32%;
+}
+#lane-3-ped {
+    top: 6.5%;
+    transform: rotate(90deg);
+    left: 46.665%;
+}
+#lane-4-ped {
+    top: 33.76%;
+    left: 33%;
+}
+.display-none {
+    display: none;
+}
+
+.rotate-right {
+    transform: rotate(90deg); 
+}
+.rotate-180 {
+    transform: rotate(180deg); 
+}
+.left-arrow {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Green_Arrow_Left-512.png');
+    background-size: cover
+}
+.right-arrow {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Green_Arrow_Right-512.png');
+    background-size: cover
+}
+.up-arrow {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Green_Arrow_Top-512.png');
+    background-size: cover
+}
+
+.timer-2 {
+    position: relative;
+    left: -119px;
+    top: 107px;
+}
+.timer-3 {
+    position: relative;
+    left: -13px;
+}
+.timer-4 {
+    position: relative;
+    left: 88px;
+    top: -110px;
+}
+@media only screen and (max-width: 1370px) {
+    .signal {
+        padding: 0px;
+    }
+    .image {
+        width: 125px;
+        height: 75px;
+        padding: 10px;
+        background-color: white;
+        position: absolute;
+        z-index: 4;
+    }
+    .lamp {
+        height: 25px;
+        width: 25px;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 25px;
+        position: relative;
+    }
+    .lamp-left {
+        float: left;
+        left: -30px;
+    }
+    .lamp-straight {
+        float: left;
+        left: -30px;
+    }
+    .lamp-right {
+        float: left;
+        left: -30px;
+    }
+    #lane-1{
+        position: absolute;
+        left: 35%;
+    }
+    #lane-2{
+        position: absolute;
+        left: 30%;
+        top: 61%;
+        transform: rotate(-90deg);
+    }
+    #lane-3{
+        position: absolute;
+        left: 63%;
+        top: 73%;
+    }
+    #lane-4{
+        position: absolute;
+        left: 64%;
+        transform: rotate(-90deg); 
+    }
+    .timer-odd {
+        position: relative;
+        left: -8px;
+        top: -2px;
+    }
+    .timer-even {
+        position: relative;
+        left: -10px;
+    }
+    h1 {
+        font-size: 25px;
+        height: 20px;
+        padding: 10px 0px;
+    }
+    .lane1-content {
+        font-family: 'digital-7';
+        font-size: 30px;
+        position: absolute;
+        left: 20%; 
+        top: 5%;
+    }
+    .lane2-content {
+        font-family: 'digital-7';
+        font-size: 30px;
+        position: absolute;
+        left: 14%; 
+        top: 94%;
+    }
+    .lane3-content {
+        font-family: 'digital-7';
+        font-size: 30px;
+        position: absolute;
+        left: 75%; 
+        top: 92%;
+    }
+    .lane4-content {
+        font-family: 'digital-7';
+        font-size: 30px;
+        position: absolute;
+        left: 83%; 
+        top: 5%;
+    }
+    #lane-1-image {
+        left:17%;
+        top: 10%;
+    }
+    #lane-2-image {
+        right:78%;
+        top: 73%;
+    }
+    #lane-3-image {
+        left: 72%;
+        top: 72%;
+    }
+    #lane-4-image {
+        left:80%;
+        top: 10%;
+    }
+    .ped-image {
+        width: 96px;
+        height: 222px;
+    }
+    #lane-1-ped {
+        top: 64%;
+        transform: rotate(90deg);
+        right: 46.25%;
+    }
+    #lane-2-ped {
+        top: 30.66%;
+        right: 32%;
+    }
+    #lane-3-ped {
+        top: -2%;
+        transform: rotate(90deg);
+        left: 46.65%;
+    }
+    #lane-4-ped {
+        top: 30.66%;
+        left: 33%;
+    }
+    .timer-2 {
+        position: relative;
+        left: -90px;
+        top: 109px;
+    }
+    .timer-3 {
+        position: relative;
+        left: -13px;
+    }
+    .timer-4 {
+        position: relative;
+        left: 67px;
+        top: -110px;
+    }
+  }

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Taffic Light</title> 
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+        <script  src="./js/script.js" ></script>   
+    </head>
+<body> 
+    <button id="process-live-traffic" class="red-button"></button>
+    <div id="traffic-signals">
+        <div id="image-algo" class="display-none">
+            <div class="lane1-content">Lane 1</div>
+            <img class="image" id="lane-1-image">
+            <div class="lane2-content">Lane 2</div>
+            <img class="image" id="lane-2-image">
+            <div class="lane3-content">Lane 3</div>
+            <img class="image" id="lane-3-image">
+            <div class="lane4-content">Lane 4</div>
+            <img class="image" id="lane-4-image">
+        </div>
+            <img src="./css/zebracrossing-1.gif" class="ped-image" id="lane-1-ped">
+            <img src="./css/zebracrossing-2.gif" class="ped-image" id="lane-2-ped">
+            <img src="./css/zebracrossing-3.gif" class="ped-image" id="lane-3-ped">
+            <img src="./css/zebracrossing-4.gif" class="ped-image" id="lane-4-ped">
+        <div id="lane-1" class="signal">
+            <h1 class="timer-1" id="timer-1" >01</h1>
+            <div class="lamp" id="lane1-Red"></div>
+            <div class="lamp" id="lane1-Yellow"></div>
+            <div class="lamp lamp-left left-arrow" id="lane1-Green-left">
+            </div>
+            <div class="lamp lamp-straight up-arrow" id="lane1-Green"></div>
+            <div class="lamp lamp-right right-arrow" id="lane1-Green-Right">
+            </div>
+        </div>
+        <div id="lane-2" class="signal">
+                <h1 class="timer-2 rotate-right" id="timer-2">02</h1>
+            <div class="lamp" id="lane2-Red"></div>
+            <div class="lamp" id="lane2-Yellow"></div>
+            <div class="lamp lamp-left" id="lane2-Green-left"></div>
+            <div class="lamp lamp-straight" id="lane2-Green"></div>
+            <div class="lamp lamp-right" id="lane2-Green-Right">
+            </div>
+        </div>  
+        <div id="lane-3" class="signal">
+
+                <div id="lane3-Green-Right" class="lamp lamp-right rotate-180" >
+                </div>
+            <div class="lamp lamp-straight rotate-180" id="lane3-Green"></div>
+            <div class="lamp lamp-left rotate-180" id="lane3-Green-left"></div>
+            <div class="lamp clear" id="lane3-Yellow"></div>
+            <div class="lamp" id="lane3-Red"></div>
+            <h1 class="timer-3" id="timer-3">03</h1>
+        </div>
+        <div id="lane-4" class="signal">
+                <div id="lane4-Green-Right" class="lamp lamp-left rotate-180" >
+                </div>
+            <div class="lamp lamp-left rotate-180" id="lane4-Green"></div>
+            <div class="lamp lamp-left rotate-180" id="lane4-Green-left"></div>
+            <div class="lamp clear" id="lane4-Yellow"></div>
+            <div class="lamp" id="lane4-Red"></div>
+            <h1 class="timer-4 rotate-right timer-pos-fix" id="timer-4" >04</h1>
+        </div>    
+    </div>
+</body>
+</html>
