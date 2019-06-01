@@ -8,8 +8,8 @@ var slotIndex = 0;
 var frame = 1;
 var initialValue = 1;
 var json = [];
-var nodeWebSocketUrl = 'e1cb2206.ngrok.io';
-var phpUrl = '66b4885b.ngrok.io';
+var nodeWebSocketUrl = 'd91f03ee.ngrok.io';
+var phpUrl = '5db58243.ngrok.io';
 var outputFromPython;
 var trafficAlert = false;
 var trafficAlertId = -1
@@ -23,7 +23,7 @@ var ambulanceThresholdTime = 30000;
 var yellowToGreenDelay = 1000;
 var yellowToRedDelay = 4000;
 var weightThresholdToNotifyTraffic = 20;
-var sequentialAlgoDelay = 10000;
+var sequentialAlgoDelay = 30000;
 var sameLaneAmbulance = false;
 
 var timerSpeed = 1;
@@ -111,9 +111,7 @@ window.onload = function () {
         pythonWebsocketConnection.send('{"id":' + trafficId + ',"type":"traffic"}');
         document.getElementById('process-live-traffic').addEventListener('click', () => {
             frame = (frameCount * 3) + trafficId;
-            // pythonWebsocketConnection.send('{"frame":"' + frame + '","type":"live"}');
-            pythonWebsocketConnection.send('{"frame":"' + frame + '","type":"incoming_traffic", "id":'
-            + 2 + ', "weight":' + 80 + '}');
+            pythonWebsocketConnection.send('{"frame":"' + frame + '","type":"live"}');
 
             frameCount++;
 
